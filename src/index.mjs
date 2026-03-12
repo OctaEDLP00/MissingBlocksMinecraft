@@ -1,5 +1,5 @@
 import { createBlockRow } from './modules/createBlockRow.mjs'
-import { getBlocks } from './modules/getblocks.mjs'
+import { getBlocks } from './modules/getBlocks.mjs'
 import { getSchema } from './modules/getSchema.mjs'
 import { validateBlocksPresence } from './modules/validationsBlockPresence.mjs'
 
