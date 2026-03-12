@@ -4,7 +4,7 @@
  */
 export async function getSchema() {
   try {
-    const response = await fetch('/public/assets/blocks.schema.json');
+    const response = await fetch('/MissingBlocksMinecraft/public/assets/blocks.schema.json');
     const schema = await response.json();
     return schema
   } catch (error) {
