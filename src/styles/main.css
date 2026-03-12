@@ -1,0 +1,67 @@
+/* Custom styles to simulate the 3D Minecraft UI border effect */
+:root {
+  --color-bg: #313233;
+  --color-panel: #b9b9b9;
+  --color-border-light: #FFFFFF;
+  --color-border-dark: #555555;
+  --color-slot: #8B8B8B;
+  --color-green: #38E038;
+  --color-red: #E03838;
+
+  --font-pixel: 'Minecraft', monospace;
+  --font-pixel-ext: 'Minecraft Ext', monospace;
+}
+
+td {
+  border-bottom: 1px solid #373737;
+  color: #242424;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.icon {
+  font-weight: bolder;
+  font-size: 1.75rem;
+}
+
+.icon-check {
+  color: #31cf31;
+}
+
+.icon-x {
+  color: #db2f2f;
+}
+
+.pixelated.animated {
+  object-fit: cover;
+  object-position: top;
+  animation: mc-sprite-anim 25s steps(4) infinite;
+}
+
+@keyframes mc-sprite-anim {
+  from {
+    object-position: top;
+  }
+
+  to {
+    object-position: bottom;
+  }
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(/public/assets/fonts/vt323-latin-400-normal.woff2) format('woff2'), url(/public/assets/fonts/vt323-latin-400-normal.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Minecraft Ext';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(/public/assets/fonts/vt323-latin-ext-400-normal.woff2) format('woff2'), url(/public/assets/fonts/vt323-latin-ext-400-normal.woff) format('woff');
+}

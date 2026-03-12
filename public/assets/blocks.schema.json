@@ -1,0 +1,178 @@
+{
+  "$comment": "",
+  "description": "",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "$ref": "#/definitions/Name"
+      },
+      "slab": {
+        "type": "boolean",
+        "default": true
+      },
+      "stair": {
+        "type": "boolean",
+        "default": true
+      },
+      "wall": {
+        "type": "boolean",
+        "default": true
+      },
+      "fence": {
+        "type": "boolean",
+        "default": true
+      },
+      "fence_gate": {
+        "type": "boolean",
+        "default": true
+      },
+      "infested": {
+        "type": "boolean",
+        "default": true
+      },
+      "mossy": {
+        "type": "boolean",
+        "default": true
+      },
+      "chiseled": {
+        "type": "boolean",
+        "default": true
+      },
+      "other_variation": {
+        "oneOf": [
+          { "$ref": "#/definitions/OtherBlocks" },
+          { "type": "array", "items": { "$ref": "#/definitions/OtherBlocks" } }
+        ]
+      },
+      "infested_variation": {
+        "oneOf": [
+          { "$ref": "#/definitions/InfestedBlocks" },
+          { "type": "array", "items": { "$ref": "#/definitions/InfestedBlocks" } }
+        ]
+      },
+      "is_animated": {
+        "type": "boolean",
+        "default": false
+      },
+      "img_src": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "required": [
+      "name",
+      "slab",
+      "stair",
+      "wall",
+      "mossy",
+      "chiseled",
+      "img_src"
+    ],
+    "additionalProperties": false
+  },
+  "definitions": {
+    "Name": {
+      "type": "string",
+      "enum": [
+        "Stone",
+        "Cobblestone",
+        "Mossy Cobblestone",
+        "Smooth Stone",
+        "Stone Bricks",
+        "Mossy Stone Bricks",
+        "Granite",
+        "Polished Granite",
+        "Diorite",
+        "Polished Diorite",
+        "Andesite",
+        "Polished Andesite",
+        "Deepslate",
+        "Cobbled Deepslate",
+        "Polished Deepslate",
+        "Tuff",
+        "Polished Tuff",
+        "Tuff Bricks",
+        "Bricks",
+        "Packed Mud",
+        "Mud Bricks",
+        "Resin",
+        "Resin Bricks",
+        "Sandstone",
+        "Smooth Sandstone",
+        "Cut Sandstone",
+        "Red Sandstone",
+        "Smooth Red Sandstone",
+        "Cut Red Sandstone",
+        "Prismarine",
+        "Prismarine Bricks",
+        "Dark Prismarine",
+        "Nether Bricks",
+        "Red Nether Bricks",
+        "Blackstone",
+        "Polished Blackstone",
+        "Polished Blackstone Bricks",
+        "Basalt",
+        "Endstone",
+        "Endstone Bricks",
+        "Purpur",
+        "Quartz",
+        "Quartz Bricks",
+        "Smooth Quartz",
+        "Dripstone",
+        "White Concrete",
+        "Light Gray Concrete",
+        "Gray Concrete",
+        "Black Concrete",
+        "Brown Concrete",
+        "Red Concrete",
+        "Orange Concrete",
+        "Yellow Concrete",
+        "Lime Concrete",
+        "Green Concrete",
+        "Cyan Concrete",
+        "Light Blue Concrete",
+        "Blue Concrete",
+        "Purple Concrete",
+        "Magenta Concrete",
+        "Pink Concrete",
+        "Terracotta",
+        "White Terracotta",
+        "Light Gray Terracotta",
+        "Gray Terracotta",
+        "Black Terracotta",
+        "Brown Terracotta",
+        "Red Terracotta",
+        "Orange Terracotta",
+        "Yellow Terracotta",
+        "Lime Terracotta",
+        "Green Terracotta",
+        "Cyan Terracotta",
+        "Light Blue Terracotta",
+        "Blue Terracotta",
+        "Purple Terracotta",
+        "Magenta Terracotta",
+        "Pink Terracotta"
+      ]
+    },
+    "InfestedBlocks": {
+      "type": "string",
+      "enum": [
+        "Infested Stone",
+        "Infested Cobblestone",
+        "Infested Deepslate",
+        "Infested Stone Bricks",
+        "Infested Cracked Stone Bricks",
+        "Infested Mossy Stone Bricks",
+        "Infested Chiseled Stone bricks"
+      ]
+    },
+    "OtherBlocks": {
+      "type": "string",
+      "enum": [
+        "Reinforced Deepslate"
+      ]
+    }
+  }
+}

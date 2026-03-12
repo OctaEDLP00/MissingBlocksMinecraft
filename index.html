@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Minecraft Block Inconsistencies</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script src="./src/index.mjs" type='module'></script>
+  </head>
+  <body class="font-[var(--font-pixel)] min-h-screen flex flex-col items-center p-4 md:p-8">
+    <header class="mb-8 text-center">
+      <h1 class="text-5xl md:text-7xl dark:text-[#555555] mb-2 uppercase tracking-wider">Minecraft Block Inconsistencies</h1>
+      <p class="text-xl text-[var(--color-panel)]">Tracking the missing variants in the block game</p>
+    </header>
+    <main class="w-full max-w-7xl">
+      <section class="bg-[#C6C6C6] overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Block</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Slab</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Stair</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Wall</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Infested</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Mossy</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Chiseled</th>
+              <th class="bg-[#696969] py-1 px-3 text-xl text-center">Fence</th>
+              <th class="bg-[#696969] py-1 px-3 text-base text-center">Fence Gate</th>
+              <th class="bg-[#696969] py-1 px-3 text-base text-center">Other Variation</th>
+              <th class="bg-[#696969] py-1 px-3 text-base text-center">Infested Variation</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="mt-auto py-8 text-black/70 dark:text-white/40 text-sm uppercase tracking-tighter">
+      Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+    </footer>
+  </body>
+</html>

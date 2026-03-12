@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [ "../public/assets/blocks.json" ],
+      "url": "../public/assets/blocks.schema.json"
+    }
+  ]
+}
