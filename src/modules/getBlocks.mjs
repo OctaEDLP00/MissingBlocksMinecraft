@@ -6,7 +6,7 @@
  */
 export async function getBlocks() {
   try {
-    const response = await fetch('/public/assets/blocks.json');
+    const response = await fetch('/MissingBlocksMinecraft/public/assets/blocks.json');
     /** @type {Array<import('../jsdoc.d.mjs').BlocksResponse>} */
     const data = await response.json();
     return data;
